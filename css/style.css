@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at 20% 30%, rgb(30, 36, 54), rgb(7, 9, 14));
+    color: rgb(240, 243, 248);
+    min-height: 100vh;
+}
+.logo { 
+    color: aqua;
+    font-size: 50px;
+    font-family: Helvetica, sans-serif,;
+    text-align: left;
+    padding: 20px;
+}
+.logo h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 33px;
+    font-weight: 900;
+    color: yellowgreen;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    animation: glow 1.5s infinite alternate;
+}
+nav .box {
+    font-size: 17px;
+    margin: 7px;
+    border-radius: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding: 7px;
+}
+nav {
+    background: rgba(0,0,0,1);
+    padding: 10px;
+    text-align: right;
+}
+nav a:hover {
+    color: aqua;
+}
+.hero {
+    font-size: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 250px 8%;
+    color: white;
+}
+.content {
+    max-width: 600px;
+}
+.hero h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    animation: glow 1.5s infinite alternate;
+}
+.hero p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    color: yellowgreen;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.mines {
+    position: absolute;
+    left: 900px;
+    top: 250px;
+    filter: drop-shadow(0 0 25px white);
+}
