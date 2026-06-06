@@ -138,3 +138,109 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
 }
+.dom-app {
+    background: rgba(19,46,52,0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    border: 1px solid lightsalmon;
+}
+.dom-app h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.dom-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.dom-form input {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background: black;
+    color: white;
+    font-size: 14px;
+}
+.dom-form button {
+    background: red;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+}
+#dom-remove-last {
+    background: red;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+}
+.delete-card-btn {
+    background: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px red, 0 0 10px, white;
+    }
+    to {
+        text-shadow: 0 0 20px red, 0 0 30px, white;
+    }
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .sostav-title {
+        font-size: 24px;
+        margin-top: 50px;
+    }
+    .team {
+        margin-top: 50px;
+    }
+    .dom-form {
+        flex-direction: column;
+        align-items: center;
+    }
+    .dom-form input {
+        width: 80%;
+    }
+}
+@media (max-width: 480px) {
+    .sostav-title {
+        font-size: 20px;
+    }
+    .player-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    .dom-app h3 {
+        font-size: 20px;
+    }
+}

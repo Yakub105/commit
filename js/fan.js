@@ -8,7 +8,7 @@
             "Руди Гобер признавался лучшим защитником года 4 раза в карьере.",
             "Карл-Энтони Таунс выиграл конкурс трёхочковых в 2022 году.",
             "Домашняя арена команды — Target Center в Миннеаполисе.",
-            "Лучший сезон в истории: 58 побед (2023/2024 и 2025/2026)."
+            "Лучший сезон в истории: 58 побед сезон 2003/04."
         ];
         const factBtn = document.getElementById('fact-btn');
         const factText = document.getElementById('fact-text');
@@ -16,6 +16,51 @@
             factBtn.addEventListener('click', function() {
                 const randomIndex = Math.floor(Math.random() * facts.length);
                 factText.textContent = facts[randomIndex];
+            });
+        }
+        const calcForm = document.getElementById('calc-form');
+        const calcResult = document.getElementById('calc-result');
+        if (calcForm && calcResult) {
+            calcForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                const pts = parseInt(document.getElementById('calc-pts').value) || 0;
+                const reb = parseInt(document.getElementById('calc-reb').value) || 0;
+                const ast = parseInt(document.getElementById('calc-ast').value) || 0;
+                const stl = parseInt(document.getElementById('calc-stl').value) || 0;
+                const blk = parseInt(document.getElementById('calc-blk').value) || 0;
+                const tov = parseInt(document.getElementById('calc-tov').value) || 0;
+                const efficiency = pts + reb + ast + stl + blk - tov;
+                let rating = '';
+                let resultClass = '';
+                if (efficiency >= 40) {
+                    rating = 'Легендарный матч! (40+)';
+                    resultClass = 'good';
+                } else if (efficiency >= 30) {
+                    rating = 'Молодец! (30-39)';
+                    resultClass = 'good';
+                } else if (efficiency >= 20) {
+                    rating = 'Отлично! (20-29)';
+                    resultClass = 'good';
+                } else if (efficiency >= 10) {
+                    rating = 'Хорошо (10-19)';
+                    resultClass = 'good';
+                } else if (efficiency >= 0) {
+                    rating = 'Средне (0-9)';
+                    resultClass = 'bad';
+                } else {
+                    rating = 'Плохо (-)';
+                    resultClass = 'bad';
+                }
+                calcResult.innerHTML = '';
+                const efficiencySpan = document.createElement('strong');
+                efficiencySpan.textContent = `Эффективность: ${efficiency}`;
+                const ratingSpan = document.createElement('span');
+                ratingSpan.textContent = `Оценка: ${rating}`;
+                const lineBreak = document.createElement('br');
+                calcResult.appendChild(efficiencySpan);
+                calcResult.appendChild(lineBreak);
+                calcResult.appendChild(ratingSpan);
+                calcResult.className = 'calc-result ' + resultClass;
             });
         }
         const quizForm = document.getElementById('viktoty');

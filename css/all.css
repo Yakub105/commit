@@ -1,0 +1,78 @@
+.theme-toggle {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-left: 10px;
+}
+.theme-toggle:hover {
+    background: yellowgreen;
+    color: black;
+    transform: scale(1.05);
+}
+body.light-theme {
+    background: radial-gradient(circle at 20% 30%, #f5f5f5, #e0e0e0);
+    color: #333;
+}
+body.light-theme nav {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+body.light-theme nav .box {
+    color: #333;
+}
+body.light-theme nav .box:hover {
+    color: red;
+}
+body.light-theme .logo h4 {
+    color: red;
+}
+body.light-theme .player-card,
+body.light-theme .trener-card,
+body.light-theme .dom-app,
+body.light-theme .calc-block,
+body.light-theme .viktory,
+body.light-theme .api-app,
+body.light-theme .galer-slider,
+body.light-theme .fact-block,
+body.light-theme .random-fact {
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+body.light-theme .player-card p,
+body.light-theme .player-card h3,
+body.light-theme .viktory-vop p,
+body.light-theme .fact-text,
+body.light-theme .api-item p {
+    color: #333;
+}
+body.light-theme .stats,
+body.light-theme .galer-list li {
+    color: #555;
+}
+body.light-theme .viktory-vop {
+    background: rgba(0, 0, 0, 0.1);
+}
+body.light-theme .calc-row input {
+    background: rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+body.light-theme .api-item {
+    background: rgba(0, 0, 0, 0.1);
+}
+body.light-theme .api-item h4 {
+    color: red;
+}
+body.light-theme .theme-toggle {
+    background: #ddd;
+    color: #333;
+}
+body.light-theme .theme-toggle:hover {
+    background: red;
+    color: white;
+}
