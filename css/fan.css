@@ -46,9 +46,6 @@ nav {
     padding: 10px;
     text-align: right;
 }
-nav a:hover {
-    color: red;
-}
 .random-fact {
     color: white;
     border-radius: 20px;
@@ -78,10 +75,6 @@ nav a:hover {
     font-weight: bold;
     cursor: pointer;
     transition: transform 0.2s;
-}
-.fact-btn:hover {
-    transform: scale(1.1);
-    color: red;
 }
 .calc-block {
     background: rgba(19, 45, 52, 0.5);
@@ -127,9 +120,6 @@ nav a:hover {
     width: 100%;
     margin-top: 20px;
     transition: transform 0.2s;
-}
-.calc-btn:hover {
-    transform: scale(1.02);
 }
 .calc-result {
     margin-top: 25px;

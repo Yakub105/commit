@@ -46,9 +46,6 @@ nav {
     padding: 10px;
     text-align: right;
 }
-nav a:hover {
-    color: red;
-}
 .theme-toggle {
     background: rgba(0, 0, 0, 0.7);
     color: white;
@@ -60,11 +57,6 @@ nav a:hover {
     font-weight: bold;
     transition: 0.3s;
     margin-left: 10px;
-}
-.theme-toggle:hover {
-    background: yellowgreen;
-    color: black;
-    transform: scale(1.05);
 }
 .arena-page {
     max-width: 1000px;

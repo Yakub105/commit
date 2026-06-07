@@ -48,9 +48,6 @@ nav {
     padding: 10px 20px;
     text-align: right;
 }
-nav a:hover {
-    color: red;
-}
 .menu {
     display: flex;
     flex-wrap: wrap;
@@ -276,9 +273,6 @@ nav a:hover {
     transition: 0.3s;
     margin-bottom: 20px;
 }
-.api-btn:hover {
-    transform: scale(1.05);
-}
 .api-container {
     min-height: 200px;
 }
@@ -293,10 +287,6 @@ nav a:hover {
     margin-bottom: 10px;
     text-align: left;
     transition: 0.3s;
-}
-.api-item:hover {
-    transform: translateX(5px);
-    background: rgba(0, 0, 0, 0.5);
 }
 .api-item h4 {
     color: yellowgreen;
@@ -316,4 +306,18 @@ nav a:hover {
     color: red;
     text-align: center;
     padding: 20px;
+}
+@media (max-width: 768px) {
+    img {
+        max-width: 100%;
+    }
+    .history-block img {
+        width: 45%;
+    }
+}
+@media (max-width: 480px) {
+    .history-block img {
+        width: 90%;
+        margin: 10px auto;
+    }
 }

@@ -2,19 +2,19 @@
     document.addEventListener('DOMContentLoaded', function() {
         const playersData = {
             edwards: {
-                images: ["../images/one-edw.jpg", "../images/two-edw.jpg", "../images/three-edw.jpg"]
+                images: ["images/one-edw.jpg", "images/two-edw.jpg", "images/three-edw.jpg"]
             },
             gobert: {
-                images: ["../images/gober-one.jpg", "../images/gober-two.jpg", "../images/gober-three.jpg"]
+                images: ["images/gober-one.jpg", "images/gober-two.jpg", "images/gober-three.jpg"]
             },
             mcdaniels: {
-                images: ["../images/mak-one.jpg", "../images/mak-two.jpg", "../images/mak-three.jpg"]
+                images: ["images/mak-one.jpg", "images/mak-two.jpg", "images/mak-three.jpg"]
             },
             garnett: {
-                images: ["../images/kevin.jpg", "../images/kevin-two.jpg", "../images/kevin-three.jpg"]
+                images: ["images/kevin.jpg", "images/kevin-two.jpg", "images/kevin-three.jpg"]
             },
             reid: {
-                images: ["../images/naz-one.jpg", "../images/naz-two.jpg", "../images/naz-three.jpg"]
+                images: ["images/naz-one.jpg", "images/naz-two.jpg", "images/naz-three.jpg"]
             }
         };
         const sliders = document.querySelectorAll('.galer-slider');
