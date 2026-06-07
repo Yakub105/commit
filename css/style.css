@@ -105,6 +105,7 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin-bottom: 200px;
 }
 .one-year {
     font-size: 45px;
@@ -114,9 +115,16 @@ nav a:hover {
 }
 .one-photo {
     filter: drop-shadow(0 0 10px white);
-    display: block;
+    display: flex;
     max-width: 100%;
     height: auto;
+}
+.photos-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 .one-history {
     background: rgba(19,46,52,0.7);
@@ -136,7 +144,7 @@ nav a:hover {
 }
 .one-kevin {
     filter: drop-shadow(0 0 10px white);
-    display: block;
+    display: flex;
     max-width: 100%;
     height: auto;
 }
@@ -148,7 +156,7 @@ nav a:hover {
 }
 .kevin-pro {
     filter: drop-shadow(0 0 10px white);
-    display: block;
+    display: flex;
     max-width: 100%;
     height: auto;
 }
@@ -170,19 +178,19 @@ nav a:hover {
 }
 .photo-karl {
     filter: drop-shadow(0 0 10px white);
-    display: block;
+    display: flex;
     max-width: 100%;
     height: auto;
 }
 .photo-love {
     filter: drop-shadow(0 0 10px white);
-    display: block;
+    display: flex;
     max-width: 100%;
     height: auto;
 }
 .kevin-three {
     filter: drop-shadow(0 0 10px white);
-    display: block;
+    display: flex;
     max-width: 100%;
     height: auto;
 }
@@ -210,13 +218,13 @@ nav a:hover {
 }
 .one-edw {
     filter: drop-shadow(0 0 10px white);
-    display: block;
+    display: flex;
     max-width: 100%;
     height: auto;
 }
 .two-edw {
     filter: drop-shadow(0 0 10px white);
-    display: block;
+    display: flex;
     max-width: 100%;
     height: auto;
 }
